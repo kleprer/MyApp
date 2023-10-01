@@ -4,6 +4,8 @@ from pydantic import BaseModel
 
 app = FastAPI()
 
+#не придумала как заюзать и вообще как валидировать запросы, при любой попытке 
+#в swagger появляется response 500 internal server error
 class Read_Summary(BaseModel):
     page_title: str
 
